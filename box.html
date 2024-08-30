@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            border-style: double;
+            border-width: 10px;
+            border-color: rgb(97, 5, 5);
+            /* padding-left: 20px; */
+            /* padding-top: 20px;
+            padding-bottom: 20px; */
+            padding: 20px 30px 40px 10px;
+            margin-left: 300px;
+            margin-right: 300px; 
+            
+        }
+        h2{
+            position: static;
+            border: 3px solid red;
+        }
+        h3{
+            position: relative;
+            left: 30px;
+            border: 2px solid pink;
+            
+            
+        }
+        h4{
+            position: fixed;
+            bottom: 0px;
+            border: 2px solid green;
+        }
+        h5{
+            position: sticky;
+            top: 10px;
+            left: 0px;
+            border: 2px solid blue;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: antiquewhite;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            /* justify-content: space-around;
+            height: 200px;
+            align-items: center; */
+            align-content: flex-start;
+            align-items: flex-end;
+        }
+        .items {
+            background-color: azure;
+            padding: 20px;
+            margin: 10px;
+            align-items: flex-start;
+            height: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <h1> Netflix clone </h1>
+    <h2>static position</h2>
+    <h3>relative position</h3>
+    <h4>fixed</h4>
+    <h5>sticky</h5> -->
+    <!-- <div style="padding-bottom: 1000px;"></div> scroll bar -->
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+
+
+
+    </div>
+</body>
+</html>
